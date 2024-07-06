@@ -1,0 +1,69 @@
+* {
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+body {
+  margin: 0;
+  background: rgb(25, 9, 129);
+  background: radial-gradient(
+    circle,
+    rgb(62, 7, 59) 0%,
+    rgb(108, 16, 67) 50%,
+    rgb(82, 35, 72) 100%
+  );
+  height: 750px;
+  display: grid;
+}
+
+.calculator {
+  width: 400px;
+  height: 550px;
+  background-color: black;
+  margin: auto;
+}
+
+.calResult {
+  background-color: rgba(119, 17, 116, 0.494);
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.calBody {
+  background: rgb(2, 2, 41);
+  background: radial-gradient(
+    circle,
+    rgb(62, 7, 59) 0%,
+    rgb(108, 16, 67) 50%,
+    rgb(82, 35, 72) 100%
+  );
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#Btn0 {
+  grid-column: span 2;
+}
+.calButton {
+  border: 1px solid rgba(0, 0, 0, 0.172);
+  font-size: larger;
+  cursor: pointer;
+}
+
+.calNum {
+  background-color: rgba(151, 91, 151, 0.2);
+  color: white;
+}
+.topCal {
+  background-color: rgba(104, 36, 194, 0.2);
+  color: white;
+}
+.calCom {
+  background-color: rgba(161, 111, 210, 0.2);
+  color: white;
+}
+#result {
+  color: white;
+  margin: 25px;
+}

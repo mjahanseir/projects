@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>calculator</title>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="calResult">
+        <h2 id="result"></h2>
+      </div>
+      <div class="calBody">
+        <button class="calButton topCal" onclick="AC()" id="BtnAC">AC</button>
+        <button class="calButton topCal" onclick="C()" id="BtnRemove">
+          DEL
+        </button>
+        <button
+          class="calButton topCal"
+          onclick="inputNum('%')"
+          id="BtnPercent"
+        >
+          %
+        </button>
+        <button
+          class="calButton calCom"
+          onclick="inputNum('÷')"
+          id="BtnDivision"
+        >
+          ÷
+        </button>
+        <button class="calButton calNum" onclick="inputNum(1)" id="Btn1">
+          1
+        </button>
+        <button class="calButton calNum" onclick="inputNum(2)" id="Btn2">
+          2
+        </button>
+        <button class="calButton calNum" onclick="inputNum(3)" id="Btn3">
+          3
+        </button>
+        <button class="calButton calCom" onclick="inputNum('*')" id="BtnTimes">
+          ×
+        </button>
+        <button class="calButton calNum" onclick="inputNum(4)" id="Btn4">
+          4
+        </button>
+        <button class="calButton calNum" onclick="inputNum(5)" id="Btn5">
+          5
+        </button>
+        <button class="calButton calNum" onclick="inputNum(6)" id="Btn6">
+          6
+        </button>
+        <button class="calButton calCom" onclick="inputNum('-')" id="BtnMines">
+          -
+        </button>
+        <button class="calButton calNum" onclick="inputNum(7)" id="Btn7">
+          7
+        </button>
+        <button class="calButton calNum" onclick="inputNum(8)" id="Btn8">
+          8
+        </button>
+        <button class="calButton calNum" onclick="inputNum(9)" id="Btn9">
+          9
+        </button>
+        <button class="calButton calCom" onclick="inputNum('+')" id="BtnPlus">
+          +
+        </button>
+        <button class="calButton calNum" onclick="inputNum(0)" id="Btn0">
+          0
+        </button>
+        <button class="calButton calNum" onclick="inputNum('.')" id="Btndot">
+          .
+        </button>
+        <button
+          class="calButton calCom"
+          onclick="NumberCalulator()"
+          id="BtnEqual"
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
