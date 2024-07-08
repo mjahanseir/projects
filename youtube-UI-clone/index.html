@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/video.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/sidebar.css" />
+    <script
+      src="https://kit.fontawesome.com/254c564aef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--        HEADER        -->
+    <div class="header">
+      <div class="right-section">
+        <svg
+          class="menu-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          focusable="false"
+        >
+          <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+        </svg>
+        <img class="youtube-logo" src="thumbnails/YouTube_Logo.svg" alt="" />
+      </div>
+      <div class="middle-section">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="tooltip">search</div>
+        </button>
+        <button class="mic-icon">
+          <i class="fa-solid fa-microphone"></i>
+          <div class="tooltip">search with your voice</div>
+        </button>
+      </div>
+      <div class="left-section">
+        <button class="video-icon">
+          <i class="fa-solid fa-video"></i>
+          <div class="tooltip">Youtube video</div>
+        </button>
+        <button class="video-icon">
+          <i class="fa-solid fa-list"></i>
+          <div class="tooltip">Youtube list</div>
+        </button>
+        <div class="notificatio-container">
+          <button class="video-icon">
+            <i class="fa-solid fa-bell"></i>
+            <div class="tooltip">Youtube container</div>
+          </button>
+          <div class="notificatio-count">3</div>
+        </div>
+        <button class="video-icon"><i class="fa-solid fa-user"></i></button>
+      </div>
+    </div>
+    <!--        SIDEBAR        -->
+
+    <div class="sidebar-container">
+      <div class="sidebar-link">
+        <botton class="mylogo"> <i class="fa-solid fa-home"></i> </botton>
+        <div>home</div>
+      </div>
+      <div class="sidebar-link">
+        <botton class="mylogo"><i class="fa-solid fa-compass"></i> </botton>
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <botton class="mylogo"> <i class="fa-solid fa-film"></i> </botton>
+        <div>Subscriptio</div>
+      </div>
+      <div class="sidebar-link">
+        <botton class="mylogo"> <i class="fa-solid fa-play"></i> </botton>
+        <div>orginal</div>
+      </div>
+      <div class="sidebar-link">
+        <botton class="mylogo"> <i class="fa-solid fa-music"></i> </botton>
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <botton class="mylogo"> <i class="fa-solid fa-book"></i> </botton>
+        <div>Library</div>
+      </div>
+    </div>
+    <!--        MAIN        -->
+    <div class="video-grid">
+      <div class="video-preview">
+        <!-- VIDEO IMAGE -->
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          <div class="video-time">10:30</div>
+        </div>
+        <!-- -------------------- -->
+        <div class="video-pic-info">
+          <!-- small rounded photo -->
+          <div class="channel-pic">
+            <img src="./channel-images/channel-1.jpeg" class="channel-image" />
+          </div>
+          <!-- ALL VIDEO INFORMATION -->
+          <div class="video-info">
+            <!-- INFORMATION TITLE -->
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <!-- INFORMATION AUTHOR -->
+            <p class="video-author">Marques Brownlee</p>
+            <!-- INFORMATION VIEW -->
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+          <!-- -------------------- -->
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+          <div class="video-time">10:30</div>
+        </div>
+        <div class="video-pic-info">
+          <div class="channel-pic">
+            <img src="./channel-images/channel-2.jpeg" class="channel-image" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- some more column -->
+
+      <div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          <div class="video-time">10:30</div>
+        </div>
+        <div class="video-pic-info">
+          <div>
+            <img src="./channel-images/channel-1.jpeg" class="channel-image" />
+          </div>
+          <div>
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+          <div class="video-time">10:30</div>
+        </div>
+        <div class="video-pic-info">
+          <div>
+            <img src="./channel-images/channel-2.jpeg" class="channel-image" />
+          </div>
+          <div>
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          <div class="video-time">10:30</div>
+        </div>
+        <div class="video-pic-info">
+          <div>
+            <img src="./channel-images/channel-1.jpeg" class="channel-image" />
+          </div>
+          <div>
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+          <div class="video-time">10:30</div>
+        </div>
+        <div class="video-pic-info">
+          <div>
+            <img src="./channel-images/channel-2.jpeg" class="channel-image" />
+          </div>
+          <div>
+            <p class="video-title">Try Not To Laugh Challenge #9</p>
+            <p class="video-author">Markiplier</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <img src="thumbnails/info.png" alt="" width="400px" />
+  </body>
+</html>
